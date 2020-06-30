@@ -1,0 +1,48 @@
+body{
+	margin: 10px;
+	/* background-color: aqua; */
+	font-family: 'Times New Roman', Times, serif;
+}
+.heading{
+	padding: 25px 50px 75px 100px;
+	align-content: center;
+	text-align: center;
+}
+
+a{
+	color: white;
+}
+a:hover{
+	color: whitesmoke;
+}
+
+.column {
+	float: left;
+	width: 20%;
+	padding: 5px;
+}
+.row{
+	margin: 0 -5px;
+	flex-flow: row wrap;
+}
+.row::after{
+	/* if clearfix not added after row auto adjustment not kept (https://www.w3schools.com/css/css_float_clear.asp)  */
+	content: "";
+	clear: both;
+	display: grid;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px; /* 5px rounded corners */
+	margin: 10px 1px 10px 1px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }	
+	/* Add rounded corners to the top left and the top right corner of the image */
+img {
+	border-radius: 5px 5px 0 0;
+}
